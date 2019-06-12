@@ -11,6 +11,44 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .toggle-mnu, .recall-head
+    float: none
+  .top-line
+    display: flex
+    justify-content: space-between
+  .recall
+    span
+      display: none
+
+  .toggle-mnu
+    width: 27px
+    height: 20px
+    span:after, span:before
+      top: 8px
+    span:after
+      top: 16px
+    span, span:after, span:before
+      height: 2px
+      border-radius: 2px
+    &.on span:before
+      transform: rotate(45deg) translate(-2px, 0px)
+    &.on span:after
+      transform: rotate(-45deg) translate(5px, -7px)
+
+  .logo
+    font-size: 20px
+
+  .recall-head
+    right: 0
+    top: 0
+    &:before
+      width: 26px
+      height: 26px
+      left: 0
+      position: relative
+      display: inline-block
+    &:after
+      display: none
 
 // ≥480px
 +media-breakpoint-down(xs)
