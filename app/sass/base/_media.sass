@@ -3,14 +3,116 @@
 
 /*==========  Desktop First  ==========*/
 
+@media screen and (max-width: 1400px)
+
+  .mm-navbar
+    margin-top: 10px
+
+  .mm-close-btn
+    top: 10px
+
+  .mm-panel
+    ul
+      margin-top: 30px
+      font-size: 20px
+      li
+        margin-bottom: 20px
+
+  .mm-panels
+    background-position: -165px 0
+    .container:after
+      font-size: 135px
+      right: -180px
+      top: 280px
+
+  .mm-additional-items
+    margin-top: 75px
+
+
 // ≥1200px
 +media-breakpoint-down(lg)
+  .s-intro
+    background-position: -550px center
+
+  .intro-sitename
+    right: -310px
 
 // ≥992px
 +media-breakpoint-down(md)
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .intro-purpose
+    position: absolute
+    margin-top: 0
+    transform: rotate(-270deg)
+    top: 350px
+    font-size: 14px
+    right: -108px
+    .svg
+      width: 20px
+      height: 20px
+      top: -1px
+      margin-right: 10px
+    &:before
+      width: 75px
+      content: ''
+      height: 1px
+      position: absolute
+      background-color: #c4898a
+      left: -95px
+      top: 6px
+
+  .s-intro
+    h1
+      margin-top: 30px
+      text-align: center
+      font-size: 36px
+    h2
+      font-size: 48px
+      padding-left: 0
+      text-align: center
+    .btn
+      display: block
+      margin-left: auto
+      margin-right: auto
+
+  .intro-discount
+    margin-top: 330px
+    width: 100%
+    height: 108px
+    min-width: 335px
+    background-size: contain
+    position: relative
+    margin-bottom: 25px
+    &-percent
+      position: absolute
+    &-desc
+      div
+        display: inline-block
+        font-size: 12px
+        margin-right: 13px
+        margin-bottom: 0
+      span
+        font-size: 22px
+    &-actual
+      font-size: 42px
+
+  .intro-unknown
+    margin-top: 30px
+    &:before
+      width: 45px
+      top: -5px
+      margin-right: 20px
+
+  .intro-sitename
+    right: auto
+    font-size: 32px
+    top: 290px
+    left: -190px
+
+
   .toggle-mnu, .recall-head
     float: none
   .top-line
@@ -53,6 +155,53 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .mm-panels
+    background-image: url('../img/bg-menu-transparent.png')
+    background-position-x: -225px
+
+  .mm-panels .container:after
+    right: auto
+    left: -150px
+
+  .mm-additional-items
+    z-index: 2
+    position: relative
+
+  .mm-navbar__title
+    font-size: 18px
+    color: $text!important
+    margin-left: 20px
+  .mm-close-btn
+    width: 27px
+    height: 27px
+    top: 17px
+    right: 10px
+  .mm-panel
+    ul
+      font-size: 18px
+      margin-left: 30px
+      z-index: 2
+      position: relative
+
+
+  .intro-unknown
+    font-size: 12px
+
+  .intro-discount
+    padding-left: 30px
+    padding-right: 35px
+    height: 75px
+    &-actual
+      font-size: 35px
+    &-desc
+      font-size: 14px
+      span
+        font-size: 16px
+
+  .s-intro
+    background-image: url('../img/bg-intro-mobile.png')
+    background-position: 0 0
+    padding-bottom: 30px
 
 /*==========  Mobile First  ==========*/
 

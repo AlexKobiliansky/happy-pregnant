@@ -1,6 +1,95 @@
 .s-intro
+  padding-bottom: 120px
+  //background-position: -100px 0
+  //background-size: calc(100% + 100px) 100%
+  //background-repeat: no-repeat
+  background-image: url('../img/bg-intro.png')
   +bg-cover
-  padding-bottom: 1000px
+  h1
+    margin-top: 85px
+    font-size: 52px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 0
+    line-height: 1
+  h2
+    font-family: "SignPainter", sans-serif
+    font-size: 76px
+    color: $accent-brown
+    font-weight: normal
+    line-height: 1
+    padding-left: 30px
+  .container
+    position: relative
+
+.intro-discount
+  background-image: url('../img/bg-intro-discount.png')
+  background-repeat: no-repeat
+  width: 676px
+  height: 142px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: #fff
+  padding-right: 100px
+  padding-left: 50px
+  margin-top: 30px
+  position: relative
+  left: -20px
+  margin-bottom: 60px
+  &-percent
+    font-size: 50px
+    opacity: .11
+    font-weight: 700
+  &-desc
+    font-size: 16px
+    text-transform: uppercase
+    line-height: 1
+    div
+      margin-bottom: 20px
+    span
+      margin-top: 20px
+      font-size: 30px
+      font-weight: 700
+      text-transform: none
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        width: calc(100% + 10px)
+        height: 3px
+        background-color: #fff
+        left: -5px
+        top: calc(50% - 3px)
+  &-actual
+    font-size: 76px
+    font-family: "SignPainter", sans-serif
+
+.intro-unknown
+  margin-top: 66px
+  font-size: 16px
+  position: relative
+  &:before
+    content: ''
+    display: inline-block
+    position: relative
+    width: 280px
+    height: 1px
+    background-color: $text
+    left: 0
+    margin-right: 30px
+
+.intro-sitename
+  font-size: 52px
+  font-weight: 700
+  opacity: .3
+  color: #fff
+  letter-spacing: .2em
+  transform: rotate(90deg)
+  position: absolute
+  right: -335px
+  top: 425px
+
 
 .toggle-mnu
   display: block
@@ -44,7 +133,7 @@
     content: ''
     position: absolute
     width: 100%
-    height: 1px 
+    height: 1px
     background-color: #e7c5bf
     bottom: 0
     left: 0
@@ -68,7 +157,7 @@
     top: -4px
 
 .recall-head
-  right: 60px
+  right: 45px
   top: 5px
 
 
@@ -83,3 +172,91 @@
 
 .top-line
   padding-top: 35px
+
+.intro-purpose
+  margin-top: 130px
+  font-size: 16px
+  text-transform: uppercase
+  font-weight: 700
+  color: $accent-brown
+  .svg
+    width: 30px
+    height: 30px
+    margin-right: 20px
+    vertical-align: middle
+    position: relative
+    top: -3px
+
+//mmenu
+.mm-panels
+  background-color: #fff
+  background-image: url('../img/bg-menu.png')
+  background-repeat: no-repeat
+  .container
+    //position: relative
+    &:after
+      content: 'МЕНЮ'
+      font-weight: 700
+      color: $accent-red
+      font-size: 214px
+      position: absolute
+      right: -294px
+      top: 429px
+      transform: rotate(270deg)
+      opacity: .05
+
+.mm-panel
+  background-color: transparent
+  ul
+    margin-top: 100px
+    font-size: 24px
+    li
+      margin-bottom: 45px
+      a
+        +mt(.3s)
+        &:hover
+          color: $accent-red
+  .btn-brown
+    color: #fff!important
+    width: 200px
+    margin-right: 40px
+    vertical-align: top
+  .insta
+    display: inline-block
+    .svg
+      fill: $accent-brown
+      width: 42px
+      height: 42px
+      +mt(.3s)
+    &:hover
+      .svg
+        fill: $accent-link
+
+.mm-navbar
+  background: transparent
+  display: inline-block
+  border: none
+  margin-top: 35px
+
+.mm-navbar__title
+  display: inline-block!important
+  font-size: 30px
+  font-family: "GothamPro", sans-serif
+  color: #fff!important
+
+.mm-close-btn
+  display: inline-block
+  width: 38px
+  height: 38px
+  background-image: url('../img/icons/cancel.svg')
+  background-repeat: no-repeat
+  -webkit-background-size: 100%
+  background-size: 100%
+  position: absolute
+  right: 0
+  top: 20px
+
+.mm-additional-items
+  margin-top: 100px
+
+
