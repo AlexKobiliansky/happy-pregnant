@@ -42,6 +42,11 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .special
+    ul
+      margin-top: 50px
+
   .problems-slider
     margin-top: 30px
   .problems-slide
@@ -49,6 +54,14 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .gift-wrap
+    padding-left: 0
+  .gift-percents
+    top: 135px
+  .special
+    li
+      z-index: 2
 
   .intro-purpose
     position: absolute
@@ -161,6 +174,41 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .special
+    li
+      font-size: 12px
+      margin-bottom: 20px
+    h2.section-title
+      text-align: center
+
+  .gift-percents
+    font-size: 145px
+    top: 170px
+
+  .gift-wrap
+    text-align: center
+  .gift
+    width: 280px
+    text-align: left
+    margin-left: auto
+    margin-right: auto
+    .svg
+      margin-right: 10px
+
+  .s-advantages
+    padding-top: 60px
+    &:before
+      font-size: 120px
+      width: 300px
+      left: calc(50% - 150px)
+
+  .adv-item
+    padding: 25px
+    h3
+      font-size: 16px
+    li:before
+      left: 15px
 
   h2.section-title
     font-size: 36px

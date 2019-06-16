@@ -134,6 +134,18 @@ $(document).ready(function(){
     });
 
 
+    function heightses() {
+        if ($(window).width()>=991) {
+            $(".adv-item").height('auto').equalHeights();
+        }
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
+
 
 
     //E-mail Ajax Send
