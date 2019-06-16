@@ -1,0 +1,29 @@
+.s-problems
+  .section-title
+    margin-bottom: 30px
+
+.problems-wrap
+  margin-top: 65px
+
+.problem-item
+  display: table
+  &-icon
+    display: table-cell
+    width: 110px
+  &-desc
+    display: table-cell
+    vertical-align: middle
+    padding-left: 5px
+    text-transform: uppercase
+    color: $accent-brown
+    font-weight: 500
+
+.problems-slide
+  height: 500px
+  margin: 0 7.5px
+  +bg-cover
+  border-radius: 10px
+  .problems-slide
+    +mt(.3s)
+    &:after
+      +mt(.3s)

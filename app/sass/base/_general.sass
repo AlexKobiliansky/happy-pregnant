@@ -84,6 +84,72 @@ ul
     background-color: #a12643
     color: #fff
 
+h2.section-title
+  font-size: 48px
+  font-family: "SignPainter", sans-serif
+  font-weight: normal
+  margin-bottom: 0
+  line-height: 1
+
+
+.slides-transparent
+  position: relative
+  .slick-slide
+    +mt(.5s)
+    opacity: .2
+  .slick-current
+    position: relative
+    +mt(.4s)
+    opacity: 1
+    &:after
+      content: ''
+      position: absolute
+      background: transparent
+      left: 0
+      top: 0
+      bottom: 0
+      right: 0
+      +mt(.4s)
+      opacity: 1
+  .slick-list
+    //height: 500px
+  .prevSlide, .nextSlide
+    position: relative
+    +mt(.4s)
+    opacity: .2
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      right: 0
+      +mt(.4s)
+  .nextSlide
+    &:after
+      background: linear-gradient(to left, rgba(#fff, 1) 0%, rgba(#fff, 1) 70%, rgba(#fff, 0.2) 100%)
+  .prevSlide
+    &:after
+      background: linear-gradient(to right, rgba(#fff, 1) 0%, rgba(#fff, 1) 70%, rgba(#fff, 0.2) 100%)
+
+.slick-slider
+  .slick-prev, .slick-next
+    width: 17px
+    height: 32px
+    background-color: transparent
+    border: none
+    +bg-cover
+    position: absolute
+    top: calc(50% - 9px)
+    cursor: pointer
+    z-index: 100
+  .slick-prev
+    background-image: url('../img/icons/slide-prev.png')
+    left: 55px
+  .slick-next
+    background-image: url('../img/icons/slide-next.png')
+    right: 55px
+
 
 
 

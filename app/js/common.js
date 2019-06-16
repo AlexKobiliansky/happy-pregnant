@@ -51,6 +51,56 @@ $(document).ready(function(){
      */
 
 
+    $('.problems-slider').on('afterChange init', function(event, slick, direction){
+            // console.log('afterChange/init', event, slick, slick.$slides);
+            // remove all prev/next
+            slick.$slides.removeClass('prevSlide').removeClass('nextSlide');
+
+            // find current slide
+            for (var i = 0; i < slick.$slides.length; i++)
+            {
+                var $slide = $(slick.$slides[i]);
+                if ($slide.hasClass('slick-current')) {
+                    // update DOM siblings
+                    $slide.prev().addClass('prevSlide');
+                    $slide.next().addClass('nextSlide');
+                    break;
+                }
+            }
+        }
+    )
+        .on('beforeChange', function(event, slick) {
+            // optional, but cleaner maybe
+            // remove all prev/next
+            slick.$slides.removeClass('prevSlide').removeClass('nextSlide');
+        })
+        .slick({
+            infinite: false,
+            initialSlide: 1,
+            slidesToShow: 1,
+            centerMode: true,
+            centerPadding: '100px',
+            speed: 300,
+            fade: false,
+            cssEase: 'linear',
+            autoplay: false,
+            draggable: false,
+            adaptiveHeight: false,
+            dots: false,
+            prevArrow: "<button type='button' class='slick-prev'></button>",
+            nextArrow: "<button type='button' class='slick-next'></button>",
+            responsive: [
+                {
+                    breakpoint: 479,
+                    settings: {
+                        centerPadding: '40px',
+                    }
+                }
+            ]
+
+        });
+
+
     $('img.svg').each(function(){
         var $img = jQuery(this);
         var imgID = $img.attr('id');
