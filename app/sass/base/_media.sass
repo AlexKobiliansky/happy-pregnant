@@ -31,6 +31,10 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .review-slide
+    transform: scale(.9)
+
   .video-h
     display: none
 
@@ -48,6 +52,12 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .reviews-slider .slick-next, .reviews-slider .slick-prev
+    bottom: -60px
+
+  .slides-count
+    top: -65px
 
   .s-video
     background-size: auto 80%
@@ -211,6 +221,23 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .reviews-slider
+    .slick-prev
+      left: calc(50% - 100px)
+    .slick-next
+      right: calc(50% - 100px)
+
+  .review-slide
+    padding: 35px
+    transform: scale(1)
+    opacity: 1
+    background-color: #fff5f1
+    &-desc
+      margin-bottom: 35px
+
+    &:before, &:after
+      display: none
 
   .choose-item
     height: 140px

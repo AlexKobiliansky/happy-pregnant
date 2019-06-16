@@ -1,0 +1,63 @@
+.s-reviews
+  padding-top: 65px
+  .section-title
+    color: $accent-red
+    text-align: center
+
+.reviews-slider
+  margin-bottom: 100px
+  .nextSlide, .prevSlide
+    opacity: 1
+    background-color: #fff
+    box-shadow: 0 0 20px 0 rgba(#000, .1)
+  .slick-track
+    padding-top: 30px
+    padding-bottom: 30px
+  .nextSlide
+    &:after
+      background: linear-gradient(to left,#fff 0,#fff 50%,rgba(255,255,255, .2) 100%)
+  .prevSlide
+    &:after
+      background: linear-gradient(to right,#fff 0,#fff 50%,rgba(255,255,255, .2) 100%)
+  .slick-prev, .slick-next
+    top: auto
+    bottom: -35px
+  .slick-prev
+    left: calc(50% - 200px)
+  .slick-next
+    right: calc(50% - 200px)
+
+.review-slide
+  padding: 35px 80px 50px
+  border-radius: 10px
+  transform: scale(.8)
+  +mt(.3s)
+  &-img
+    width: 70px
+    height: 70px
+    border-radius: 50%
+    +bg-cover
+    float: left
+    margin-right: 30px
+  &-name
+    margin-top: 15px
+    font-weight: 700
+    color: $accent-brown
+    margin-bottom: 10px
+  &-date
+    font-size: 14px
+  &-top
+    margin-bottom: 50px
+  &.slick-current
+    background-color: #fff5f1
+    transform: scale(1)
+
+
+.slides-count
+  font-weight: 700
+  font-size: 14px
+  color: $accent-brown
+  text-align: center
+  position: relative
+  top: -90px
+
