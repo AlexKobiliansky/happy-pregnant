@@ -31,6 +31,12 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .video-h
+    display: none
+
+  .choose
+    margin-top: 50px
+
   .problems-slide
     height: 350px
 
@@ -42,6 +48,37 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-video
+    background-size: auto 80%
+
+  .choose-wrap
+    flex-wrap: wrap
+    height: auto
+    top: 0
+    margin-bottom: 50px
+
+  .choose-item
+    margin-top: 0
+    width: calc(33% - 4px)
+    margin-right: 0
+    &:first-child
+      height: 410px
+      width: 100%
+      margin-right: 0
+      margin-bottom: 30px
+
+  .choose
+    .section-title
+      width: 100%
+      text-align: center
+
+  .videocom-title
+    font-size: 20px
+    margin-bottom: 10px
+
+  .video-item
+    height: 370px
 
   .special
     ul
@@ -174,6 +211,18 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .choose-item
+    height: 140px
+    padding: 0
+    &:first-child
+      padding: 250px 25px 25px 25px
+
+  .feat-item-desc
+    padding-left: 0
+
+  .video-item
+    height: 200px
 
   .special
     li

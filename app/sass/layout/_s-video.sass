@@ -1,0 +1,121 @@
+.s-video
+  background-image: url('../img/bg-video.png')
+  background-repeat: no-repeat
+  background-size: 100%
+  padding-top: 65px
+  margin-top: -275px
+  position: relative
+  z-index: 2
+
+.videocom-item
+  position: relative
+  margin-bottom: 30px
+
+.video-item
+  height: 250px
+  width: 100%
+  background-color: #000
+.thumbnail-container
+  +bg-cover
+  position: relative
+  &:after
+    +overlay()
+    +mt(.3s)
+    background-color: rgba(#000, .4)
+    opacity: 1
+    z-index: 1
+
+.btn-play
+  position: absolute
+  width: 45px
+  height: 45px
+  left: calc(50% - 22.5px)
+  top: calc(50% - 22.5px)
+  z-index: 3
+  cursor: pointer
+  .svg
+    +mt(.3s)
+    fill: #fff
+    width: 45px
+    height: 45px
+    +mt(.3s)
+  &:hover
+    .svg
+      fill: $accent-red
+
+.videocom-title
+  font-weight: 500
+  text-transform: uppercase
+  font-size: 22px
+  margin-bottom: 32px
+
+
+
+.video-h
+  margin-top: 40px
+  font-size: 72px
+  font-weight: 700
+  text-transform: uppercase
+  opacity: .3
+  color: #fff
+  position: relative
+  &:after
+    position: absolute
+    content: ''
+    height: 2px
+    background-color: #fff
+    width: 335px
+    right: 0
+    top: 40px
+
+.choose
+  .section-title
+    width: 400px
+    margin-left: auto
+
+.choose-item
+  +bg-cover
+  height: 305px
+  border-radius: 10px
+  width: calc(23% - 15px)
+  margin-top: 95px
+  margin-right: 15px
+  padding: 240px 35px 35px
+  text-align: center
+  &:first-child
+    height: 100%
+    margin-top: 0
+    width: 31%
+    margin-right: 30px
+    box-shadow: 0 0 35px 5px rgba(#000, .05)
+  &:last-child
+    margin-right: 0
+  &-title
+    font-size: 18px
+    text-transform: uppercase
+    font-weight: 500
+    color: $accent-red
+    margin-bottom: 25px
+  &-desc
+    font-size: 14px
+
+.choose-wrap
+  display: flex
+  justify-content: space-between
+  margin-top: 25px
+  height: 400px
+  position: relative
+  top: -95px
+
+
+.feat-item
+  display: table
+  padding-bottom: 10px
+  &-icon
+    display: table-cell
+    width: 85px
+    text-align: center
+  &-desc
+    display: table-cell
+    vertical-align: middle
+    padding-left: 15px
