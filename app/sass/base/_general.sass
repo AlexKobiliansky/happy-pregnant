@@ -10,7 +10,7 @@
     box-sizing: border-box
 
 ::placeholder
-  color: #666
+  color: $text
 
 ::selection
   background-color: $accent-brown
@@ -73,10 +73,13 @@ ul
   padding: 14px 0 12px
   text-align: center
   border-radius: 40px
+  box-shadow: none
+  cursor: pointer
 
 .btn-brown
   background-color: $accent-brown
   color: #fff
+  border: none
   &:active, &:focus
     background-color: #bd2e50
     color: #fff
@@ -90,6 +93,8 @@ h2.section-title
   font-weight: normal
   margin-bottom: 0
   line-height: 1
+  span
+    color: $accent-brown
 
 
 .slides-transparent

@@ -203,6 +203,21 @@ $(document).ready(function(){
     });
 
 
+    var uPhone = $('.user-phone');
+    uPhone.mask("+7 (999) 999-99-99",{autoclear: false});
+
+    uPhone.on('click', function (ele) {
+        var needelem = ele.target || event.srcElement;
+        needelem.setSelectionRange(4,4);
+        needelem.focus();
+    });
+
+    $.validate({
+        form : '.contact-form',
+        scrollToTopOnError: false
+    });
+
+
     function heightses() {
         if ($(window).width()>=991) {
             $(".adv-item").height('auto').equalHeights();

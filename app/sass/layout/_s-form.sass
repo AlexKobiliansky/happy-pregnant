@@ -1,0 +1,60 @@
+.s-form
+  background-image: url('../img/bg-form.png')
+  padding: 180px 0 80px
+  margin-top: -200px
+  +bg-cover
+  form
+    .form-labels-wrap
+      margin-top: 30px
+      position: relative
+      z-index: 2
+
+.section-form
+  padding-left: 160px
+  font-size: 16px
+  position: relative
+  .section-title
+    margin-top: 90px
+  label
+    display: block
+    margin-bottom: 20px
+    input
+      width: 100%
+      background-color: transparent
+      border: none
+      border-bottom: 2px solid $text
+      padding: 7px 10px
+  .btn
+    margin-top: 20px
+  .form-notice
+    margin-top: 30px
+    span
+      display: inline-block
+      background-color: #a12643
+      color: #fff
+      padding: 7px 8px 3px 8px
+      border-radius: 3px
+      margin: 0 7px
+  &:before
+    content: 'sale'
+    font-size: 148px
+    opacity: .4
+    font-weight: bold
+    color: #fff
+    text-transform: uppercase
+    position: absolute
+    transform: rotate(270deg)
+    left: -150px
+    top: 105px
+    line-height: 1
+    z-index: 0
+
+form
+  .form-error
+    display: none
+  label.has-error
+    input
+      border-color: red!important
+      color: red
+      &::placeholder
+        color: red
