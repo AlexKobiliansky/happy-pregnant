@@ -320,6 +320,8 @@ $(document).ready(function(){
      * end YOUTUBE SCRIPT
      */
 
+    $('.s-gallery').photoswipe();
+
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
