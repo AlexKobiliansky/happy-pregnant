@@ -32,6 +32,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-additional
+    background-position: center -160px
+  
   .section-form
     padding-left: 0
     &:before
@@ -57,6 +60,9 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .add-item-img
+    height: 500px
 
   .section-form
     text-align: center
@@ -229,6 +235,19 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-additional
+    background-image: none
+    background-color: #87233a
+    color: #fff
+    .section-desc
+      font-size: 12px
+    .section-title
+      color: #fff
+
+  .add-item
+    &-img
+      height: 260px
 
   .s-form
     background-image: url('../img/bg-form-mobile.png')
