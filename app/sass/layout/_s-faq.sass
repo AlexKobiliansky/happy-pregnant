@@ -1,0 +1,60 @@
+.s-faq
+  padding-top: 90px
+
+.faq-img
+  height: 495px
+  +bg-cover
+  border-radius: 10px
+
+.faq-wrap
+  padding-left: 80px
+
+.faq-item
+  margin-bottom: 15px
+  &-quest
+    color: #000
+    text-transform: uppercase
+    font-weight: 500
+    +mt(.3s)
+    background-color: #ffeee8
+    padding: 18px 70px 16px 28px
+    border-radius: 10px
+    position: relative
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      width: 12px
+      height: 2px
+      background-color: $accent-brown
+      right: 28px
+      top: calc(50% - 1px)
+      +mt(.3s)
+    &:after
+      content: ''
+      position: absolute
+      width: 2px
+      height: 12px
+      background-color: $accent-brown
+      right: 33px
+      top: calc(50% - 6px)
+      +mt(.3s)
+    &:hover
+      background-color: $accent-brown
+      color: #fff
+      &:after, &:before
+        background-color: #fff
+  &-ans
+    padding: 22px 0
+    display: none
+  &.active
+    .faq-item-quest
+      color: #fff
+      background-color: $accent-brown
+      &:after
+        display: none
+      &:before
+        background-color: #fff
+  &:first-child
+    .faq-item-ans
+      display: block
